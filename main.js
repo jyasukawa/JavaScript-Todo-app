@@ -3,6 +3,7 @@ function addTask() {
     const taskInput = document.getElementById('task-input');
     const task = taskInput.value.trim(); //前後の不要なスペースを取り除く
     console.log(task);
+
     if (task !== "") { //以降、タスクが空でない場合のみ実行
         const li = document.createElement('li'); //新しく追加するタスク用のli要素を作成
         li.textContent = task; // li要素の文字列にtaskを設定
