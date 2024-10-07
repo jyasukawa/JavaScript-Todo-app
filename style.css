@@ -6,6 +6,7 @@ body {
 
 #task-input {
     width: 300px;
+    height: 27px;
     padding: 0 30px 0 0;
     box-sizing: border-box;
 }
@@ -18,8 +19,22 @@ body {
     display: flex;
     align-items: center;
     list-style-type: none;;
-    width: 300px;
-    height: 50px;
+    width: 337px;
+    height: 50px; /* 高さを一定にすることでオーバーフローのリストと高さを合わせる */
     border: 1px solid red;
     margin-bottom: 10px;
+    padding: 0 0 0 10px;
+}
+
+#task-list li span {
+    flex-grow: 1; /*flexコンテナ内の余った部分いっぱいに広がる*/
+    overflow: hidden; /* オーバーフローを隠す */
+    text-overflow: ellipsis; /* オーバーフロー時に「...」を表示 */
+    white-space: nowrap; /* テキストを一行に収める */
+    width:  1px; /* 0px~270pxくらいでうまくいくx */
+}
+
+#task-list button {
+    padding: 5.5px;
+    margin-left: 5px;
 }
