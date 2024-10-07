@@ -40,6 +40,9 @@ function addTask() {
                     li.removeChild(saveButton); // 保存ボタンを削除
                     editButton.style.display = 'inline'; // 編集ボタンを再表示
                 }
+                else {
+                    alert("タスク内容が空です。正しい内容を入力してください。");
+                }
             });
         });
 
