@@ -56,3 +56,4 @@ function addTask() {
 }
 
 document.getElementById('add-task-btn').addEventListener('click', addTask);
+
